@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+void main()
+{
+
+     //freopen("input.txt","r",stdin);
+    //freopen("output.txt","w",stdout);
+
+ 
+
+ char x,y;
+
+ // 알파벳 입력 받기
+ printf("");
+ scanf("%c", &x);
+
+ /*
+ 입력받은 문자가 소문자일 경우
+ 아스키코드에서 32를 빼서 소문자로 변환
+ 입력받은 문자가 대문자일 경우
+ 아스키코드에서 32를 더해서 대문자로 변환
+ */
+
+ if (x>='a' && x<='z')
+  y=x-32;
+ else if (x>='A' && x<='Z')
+  y=x+32;
+
+ printf("%c", y);
+} 
+
+

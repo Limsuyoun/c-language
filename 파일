@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string a = "0123456789)!@#$%^&*(";
+    string b = ")!@#$%^&*(0123456789";
+    string str;
+    int i, j;
+    
+    cin>> str;
+    
+    for(i=0; i<str.length();i++\)
+    cout << "Hello world!" << endl;
+    return 0;
+}

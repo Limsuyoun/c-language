@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() // 입력(void형)없이 main함수를 호출해서 출력은 정수(int형)로 하라는 의미
+{
+    int a,i,j,k,l,arr[50],count=1;
+    scanf("%d", &a);
+    for(i=0;i<a; i++)
+    {
+        if(i+i%2==1)
+        {
+            for(k=0; k<a;k++)
+                arr[i][k]=count++;
+            } else{
+                for(l=a;k<a; k++)
+                    arr[i][l]=count++;
+        }
+    }
+    for (k=0;k<a; k++
+    {
+        printf("")
+        for(l=0; l<a; l++)
+
+    }
+    printf("%d", arr[k][l]);
+    return 0;
+}
+

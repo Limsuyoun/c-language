@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main() {
+	int n,i,j, data1, data2;
+	scanf("%d", &n);
+	data1 = 0;
+	data2 = n - 1;
+	for (i = 0; i < n; i++) {
+		for (j = 0; j < n; j++) {
+			if (j == 0 || j == n - 1)
+				printf("*");
+			else if (data1 <= data2) {
+				if (data1 == j)
+					printf("*");
+				else if (data2 == j)
+					printf("*");
+				else
+					printf(" ");
+			}
+			else
+				printf(" ");
+		}
+		printf("\n");
+		if (data1 <= data2) {
+			data1++;
+			data2--;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+#include <stdio.h> //#=컴파일러가 컴파일을 수행하기전에 먼저 처리하라는 의미
+
+int main() //입력(void형) 없이 main함수를 호출해서 출력을 정수(int형)로 하라는 의미
+{
+    int A,B;
+
+
+    scanf ("%d %d",&A, &B);
+
+    if (A<B)
+        printf("<");
+
+    else if (A>B)
+        printf(">");
+
+    else if(A==B)
+        printf("=");
+    else
+        ;
+
+    //printf("%d", );
+
+}

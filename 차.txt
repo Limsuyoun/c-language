@@ -1,0 +1,48 @@
+#include<stdio.h>
+int main() {
+	int n, j, i, m = 1,data1,data2;
+	scanf("%d", &n);
+	data1 = n / 2;
+	data2 = n / 2;
+	for (i = 0; i < n; i++) {
+		for (j = 0; j < n; j++) {
+			if (i == 0 && j <n - 2 && j > 1) {
+				if (m == 1) {
+					printf("*");
+					m = 0;
+				}
+				else {
+					printf(" ");
+					m = 1;
+				}
+			}
+			else if (i == 1) {
+				if (m == 1) {
+					printf("*");
+					m = 0;
+				}
+				else {
+					printf(" ");
+					m = 1;
+				}
+			}
+			else if (data1 == j && data1 >= 0)
+				printf("*");
+			else if (data2 == j && data1 >= 0)
+				printf("*");
+			else
+				printf(" ");
+			if (j == n - 1 && data1 >=0){
+				printf("   *");
+				if (i == n / 2/2)
+					printf("**********");
+			}
+		}
+		printf("\n");
+		if (data1 >= 0) {
+			data1--;
+			data2++;
+		}
+		m = 1;
+	}
+}

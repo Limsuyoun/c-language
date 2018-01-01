@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main() {
+	int n,i,j,data, result= -1;
+	scanf("%d", &n);
+	data = n / 2 + 1;
+	for (i = 0; i < n; i++) {
+		for (j = 0; j < n; j++) {
+			if (j == 0)
+				printf("*");
+			else {
+				if (j == data)
+					printf("*");
+				else
+					printf(" ");
+			}
+		}
+		printf("\n");
+		if (data == 1) 
+			result = 1;
+		data = data + result;
+	}
+}

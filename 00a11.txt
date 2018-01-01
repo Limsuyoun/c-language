@@ -1,0 +1,15 @@
+#include <stdio.h> //문자열을 입력받아 거꾸로 출력
+
+void main() // void =비어있다 , void main = 메인함수에서 리턴값이 없다
+{
+int len, i; //len과 i를 정수형변수로로 선언 한다
+char str[100]; // char =  character문자 , str = string 문자열 , [100] = 100가지문자열
+scanf("%s",str); //%s = string , scanf = 입력
+
+len = strlen(str); //
+
+for(i=len-1;i>=0;i--) //
+printf("%c", str[i]); // %c = character , str = string
+
+printf("\n"); //printf = 출력
+}

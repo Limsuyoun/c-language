@@ -1,0 +1,36 @@
+
+
+
+#include <stdio.h>
+
+#include <string.h>
+
+#include <stdlib.h>
+
+int main(void)
+
+{ long long a;
+
+  char buffer[15];
+
+  long long sum=0, i;
+
+  long long temp;
+
+  scanf("%lld", &a); // 1111111111
+
+  sprintf (buffer,"%lld", a); //string.h
+
+  for (i=0; i<10;i++)
+
+  {   temp = ((long long) buffer[i])-48;
+
+      sum = sum + temp; //stdlib.h
+
+  }
+
+  printf ("%lld",sum); // 10
+
+  return 0;
+
+}

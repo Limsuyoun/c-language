@@ -1,0 +1,31 @@
+#include <iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+
+int main()
+{
+    int i, a[100], count =0, n = 0;
+    string str;
+    cin >> str;
+
+    for(i=0;i<str.length(); i++) {
+        if(str[i] == '0') {
+                //'0'이 나온 경우 '1'의 연속된 개수를
+                // 배열에 저장한다
+            if(count > 0) a[n++] = count ;
+            count = 0;
+        }
+        // '0'이 나온 개수룰 0으로 초기화 하기 떄문에
+        // '1'인 경우는 무조건 개수 증가
+        else count++;
+    }
+    //마지막에 '1'로 끝난 경우 마지막 단지는 추가되지
+    //못햇으므로 , 마지막 개수도 배열에 넣어준다
+    if(count > 0) a[n++] = count ++;
+    // 정렬
+    sort (a, a+n) ;
+    for(i=0;i<n; i++) cout << a[i] << " ";
+    cout << endl;
+    return 0;
+}

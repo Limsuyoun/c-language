@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c[1000],odd,even,i;
+    scanf("%d", &a);
+    odd=0; //Â¦¼ö
+    even=a-1; //È¦¼ö
+
+    for(i=0;i<a;i++)
+        {
+    scanf(" %d", &b);
+    if(b%2 !=0)
+        c[odd++] =b;
+    else if(b%2 !=1)
+        c[even--] = b;
+
+        }
+    for(i=0;i<a;i++)
+    printf(" %d",c[i]);
+}
+

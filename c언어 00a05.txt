@@ -1,0 +1,36 @@
+#include <stdio.h> //
+
+int main(void)
+{
+
+
+	int no,max,min,i,num; //no,max,min,i,num을 정수형으로 선언하시오 
+
+	scanf("%d",&no); //no를 입력
+
+
+	for(i=0;i<no;i++)0 //i는 0, i가 0보다 작아질떄까지 i에다가 1을 더하시오 
+        {
+
+		scanf("%d",&num); //num입력 
+
+
+	    if (i==0) //i가 0이라면 
+            {
+	    max=num ; //num에 max를 넣으시오 
+	    min=num ; //num에 min을 넣으시오 
+	    }
+
+		if(max<num) //max가 num보다 작다면 
+        {
+        max=num; //num에 num을 넣으시오 
+    }
+        if(min>num) //min이 num보다 크다면 
+            {
+		min=num; //num에 min을 넣으시오
+		}
+	}
+	printf("%d %d",min, max); //min,max 출력 
+	return 0; //0을 반환하라 
+}
+
