@@ -1,0 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS#include <stdio.h>#include <stdlib.h>
+#ifdef aaaint main(void){ char *data = (char*)malloc(20); scanf("%s", data);    //  // printf("%s\n", &data);  printf("%s\n", data); // printf("%s\n", *data);  return 0;}#endif
+int main(void){  ///char data // char data[20] int *data = (int*) malloc(1); scanf("%d", data);    //  // printf("%s\n", &data);  printf("%d\n", *data); // printf("%s\n", *data);  return 0;}
+
